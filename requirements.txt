@@ -1,0 +1,6 @@
+tensorflow
+numpy==1.24.3
+scikit-learn
+Pillow
+typing-extensions==3.6.6
+urllib3==1.26.7
