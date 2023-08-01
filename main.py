@@ -67,14 +67,14 @@ if uploaded_file is not None:
         col1,col2,col3,col4,col5 = st.columns(5)
 
         with col1:
-            st.image(os.path.join(filenames[indices[0][0]]))
+            st.image(filenames[indices[0][0]].replace("\\", "/"))
         with col2:
-            st.image(os.path.join(filenames[indices[0][1]]))
+            st.image(filenames[indices[0][1]].replace("\\", "/"))
         with col3:
-            st.image(os.path.join(filenames[indices[0][2]]))
+            st.image(filenames[indices[0][2]].replace("\\", "/"))
         with col4:
-            st.image(os.path.join(filenames[indices[0][3]]))
+            st.image(filenames[indices[0][3]].replace("\\", "/"))
         with col5:
-            st.image(os.path.join(filenames[indices[0][4]]))
+            st.image(filenames[indices[0][4]].replace("\\", "/"))
     else:
         st.header("Some error occured in file upload")
